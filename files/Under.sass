@@ -1,0 +1,479 @@
+//
+// Frequently used colors
+//
+
+// Interface colors
+$button 			  : #404040
+$button_highlight	  : #009fde
+$theme_highlight_1 	  : #e6e6e6
+$theme_highlight_2 	  : #ffb300
+
+// Background colors
+$background_darkest   : #1e1e1e
+$background_darker    : #282828
+$background_darkish   : #2b2b2b
+$background_dark      : #323232
+$background_highlight : #404040
+$background_bright 	  : #4d4d4d
+
+// Text colours
+$text_brightest 	  : #ffffff
+$text_bright 		  : #e6e6e6
+$text_normal 		  : #acacac
+$text_dim 			  : #8c8c8c
+$text_highlight       : #ffb300
+
+// Accent colours
+$accent_green    	  : #abcf1d
+$accent_pink	      : #e91e63
+$accent_grey    	  : #49758f
+$accent_orange	      : #ff9800
+
+// Configuration highlights
+$highlight_project 	  : #3a4527
+$highlight_global     : #273f45
+
+// Login highlight
+$danger_1			  : #291d1e
+$danger_2			  : #f2c7cd
+$danger_3			  : #66232c
+
+//
+// Preamble
+//
+
+html
+	background-color	: $background_darkest !important
+body
+	font-family			: 'Open Sans' !important
+	background-color	: $background_darkest !important
+
+.main-content, .page-content, .main-container, .main-container:before, .main-container.container:before, .skin-3 .main-container:before
+	background: $background_darkest !important
+	background-color: $background_darkest !important
+
+.blue
+	color: $text_bright !important
+
+
+//
+// Navbar top
+//
+
+// Navbar as a whole
+.navbar
+	background-color: $background_darker !important
+
+// Navbar buttons (report issue, and invite users)
+.btn.btn-white, .btn-primary, .btn.btn-white.btn-primary
+	background-color: $button !important
+	border-color: $button !important
+	color: $text_bright !important
+	&:hover
+		background-color: $button_highlight !important
+		border-color: $button_highlight !important
+
+// Undropped drop-down menu (project name, user)
+.dropdown-toggle
+	background-color: $background_darker !important
+	&:hover
+		background-color: $background_dark !important
+
+// Dropped drop-down menu
+.dropdown-menu
+	background-color: $background_darker !important
+	a
+		color: $text_bright !important
+	.search
+		background-color: $background_dark !important
+		color: $text_bright !important
+	li.active:hover>a, li.active>a, li:hover>a, li>a:active, li>a:focus
+		background-color: $button_highlight !important
+		color: $text_brightest !important
+
+
+//
+// Sidebar
+//
+
+// Sidebar as a whole
+.sidebar
+	background-color: $background_darker !important
+	border-color: $background_darkest !important
+
+// Set the menu navigation arrow
+.skin-3 .nav-list>li
+	a:before
+		border-right-color: $text_bright !important
+
+// Set the border color for non-highlighted sidebar elements
+.skin-3 .nav-list>li
+	border-color: $background_darkest !important
+.skin-3 .nav-list li.active+li
+	border-color: $background_darkest !important
+.skin-3 .nav-list>li.active
+	border-color: $background_darkest !important
+
+// Set the border color for highlighted sidebar elements
+.skin-3 .nav-list>li:hover
+	border-color: $background_darkest !important
+.skin-3 .nav-list>li:hover:before
+	background-color: $background_darker !important
+	width: 0px
+.skin-3 .nav-list>li.active:before
+	background-color: green !important
+	width: 0px
+.skin-3 .nav-list>li:hover+li
+	border-top-color: $background_darkest !important
+
+// Inactive sidebar elements
+.skin-3 .nav-list>li>a
+	border-color: $background_darkest !important
+	background-color: $background_darker !important
+	span
+		background-color: $background_darker !important
+		color: $text_dim
+	&:hover
+		background-color: $background_dark !important
+		border-color: $background_darkest !important
+		span
+			background-color: $background_dark !important
+			color: $text_brightest
+		.menu-icon
+			color : $text_dim !important
+
+// Active sidebar element
+.skin-3 .nav-list>li.active>a
+	border-color: $background_darkest !important
+	background-color: $background_highlight !important
+	span
+		background-color: $background_highlight !important
+		color: $text_bright
+		font-weight: 400
+	.menu-icon
+		color : $theme_highlight_1 !important
+
+// Menu icon color
+.menu-icon
+	color: $background_highlight !important
+
+// Minimized menu text appearing on highlighting
+.skin-3 .sidebar.menu-min .nav-list>li>a>.menu-text
+	color: $text_bright !important
+	background-color: $background_dark !important
+	border-color: $text_bright
+
+// Side bar toggler
+.sidebar-toggle
+	background-color: $background_dark !important
+	border-color: $background_darkest !important
+	&>.ace-icon
+		background-color: $button !important
+		border-color: $background_highlight !important
+		color: $text_bright !important
+	&:before
+		border-color: $background_highlight !important
+
+
+//
+// Bread crumbs
+//
+
+// Issue search bar
+.breadcrumbs
+	background-color: $background_darker !important
+	a
+		color: $text_dim !important
+	.nav-recent
+		color: $text_dim !important
+	.nav-search-input
+		background-color: $background_dark !important
+		border-color: $background_highlight !important
+		color: $text_bright !important
+	.nav-search-input::placeholder
+		color: $text_dim !important
+	.nav-search-icon
+		color: $text_dim !important
+	.label
+		background-color: $button_highlight !important
+		&:before
+			border-right-color: $button_highlight !important
+		&.arrowed-in-right:after
+			border-color: $button_highlight !important
+			border-right-color: transparent !important
+
+
+//
+// Widget tabs
+//
+
+// Border above a tab to indicate which tab is active
+.nav-tabs>li.active>a
+	border-top: 2px solid $button_highlight !important
+
+// Tabs
+.nav-tabs
+	a
+		background-color: $background_darker !important
+		color: $text_bright !important
+		&:hover
+			background-color: $background_dark !important
+			color: $text_brightest !important
+
+
+//
+// Widgets
+//
+
+// Widget background
+.widget-box, .widget-main
+	background-color: $background_darker !important
+	border-color: $background_darker !important
+
+// Widget header
+.widget-header
+	background-color: $background_dark !important
+	border-color 	: $background_dark !important
+	background-image: none
+	color 			: $text_bright
+	.white
+		color: $text_bright
+	.white:hover
+		color: $text_brightest !important
+	.badge
+		background-color: $background_highlight !important
+		border-color: $text_dim !important
+
+// Widget body
+.widget-body
+	background-color: $background_darker !important
+	color: $text_bright !important
+	.table
+		a
+			color: $text_bright !important
+			font-weight: 500
+		a.tagi-brighter
+			color: cyan !important
+			font-weight: bold
+		a.btn
+			color: $text_normal !important
+		th
+			background-color: $background_highlight !important
+			border-color: $background_highlight !important
+			&
+				color: $text_bright !important
+				font-weight: 500
+		td
+			border-color: $background_darker !important
+		thead
+			background-color: $background_highlight !important
+			tr
+				background-color: inherit !important
+				td
+					background-color: $background_highlight !important
+					color: $text_brightest !important
+	.fa-pencil
+		color: $text_bright !important
+	.table-responsive
+		background-color: $background_darker !important
+		color: $text_normal !important
+	.table-striped>tbody>tr:nth-of-type(odd)
+		background-color: $background_darker !important
+		&:hover
+			background-color: $background_darkish !important
+	.table-striped>tbody>tr
+		background-color: $background_darkish !important
+		&:hover
+			background-color: $background_dark !important
+	.profile-activity
+		border-color: $background_darker !important
+		&:hover
+			background-color: $background_highlight !important
+		a
+			color: $theme_highlight_2 !important
+	.btn-primary.no-hover
+		background-color: $accent_green !important
+		&:hover
+			background-color: $accent_green !important
+		&.fa-plus
+			background-color: $button_highlight !important
+			&:hover
+				background-color: $button_highlight !important
+		&.fa-flag-o
+			background-color: $accent_orange !important
+			&:hover
+				background-color: $accent_orange !important
+		&.fa-tag
+			background-color: $accent_pink !important
+			&:hover
+				background-color: $accent_pink !important
+
+
+// Forms inside widgets
+.form-inline
+	.input-sm
+		background-color: $background_dark !important
+		border-color: $background_bright !important
+		color: $text_bright !important
+.form-control, .input-sm, input
+	background-color: $background_dark !important
+	border-color: $background_bright !important
+	color: $text_bright !important
+
+// Tables
+.table
+	background-color: $background_darker !important
+.table-bordered
+	border-color: $background_darkest !important
+	background-color: $background_darker !important
+.table-hover>tbody>tr:hover
+	background-color: $background_darker !important
+
+// Table categories and spacers
+td.category, tr.bugnote .bugnote-note
+	background-color: $background_dark !important
+	color: $text_brightest !important
+tr.spacer
+	background-color: $background_darkish !important
+
+// Selection dropdowns
+select
+	background-color: $background_highlight !important
+	border-color : $background_bright !important
+	color: $text_bright !important
+
+// Asterisks on required fields
+span.required
+	color: $theme_highlight_2 !important
+
+
+//
+// Widget toolbar
+//
+
+// Widget toolbox (line under widget header)
+.widget-toolbox
+	background-color: $background_dark !important
+	border-color: $background_darker !important
+
+// Widget toolbar in widget toolbox
+.btn-toolbar
+	background-color: $background_dark !important
+	.label
+		background-color: $background_highlight !important
+		&:before
+			border-right-color: $background_highlight !important
+		&.arrowed-in-right:after
+			border-color: $background_highlight !important
+			border-right-color: transparent !important
+
+
+//
+// Footer
+//
+
+.footer-content
+	background-color: $background_darkest !important
+	border-top-color: $background_dark !important
+	border-top-style: dotted !important
+	border-top-width: 1px !important
+	strong>a
+		color: $text_dim !important
+	small>a
+		color: $text_dim !important
+
+
+//
+// Plugin dependencies
+//
+
+span.dependency_met
+	color: $accent_green !important
+span.dependency_unmet
+	color: $accent_pink !important
+span.dependency_dated
+	color: $accent_grey !important
+span.dependency_upgrade
+	color: $accent_orange !important
+
+
+//
+// Notification panes
+//
+
+.well
+	background-color: $background_darker !important
+	border-color: $background_dark !important
+	color : $text_dim !important
+	p
+		color: $text_dim !important
+		&.bold
+			color: $text_brightest !important
+			font-weight: 500
+.color-project
+	background-color: $highlight_project !important
+	color: $text_bright !important
+.color-global
+	background-color: $highlight_global !important
+	color: $text_bright !important
+
+
+//
+// Issue details
+//
+
+// Issue summary
+td.bug-summary
+	font-weight: bold
+	color: $text_bright
+
+// calendar
+.bootstrap-datetimepicker-widget
+	&, & *
+		background-color: $background_dark !important
+		color: $text_normal !important
+	td.day:hover, span.month:hover, span.year:hover
+		background-color: $button_highlight !important
+	td.day.active, span.month.active, span.year.active
+		background-color: $background_bright !important
+
+//
+// Roadmap
+//
+
+// Roadmap header showing project name and the word 'Roadmap'
+.page-header h1
+	color: $text_brightest !important
+	font-weight: lighter
+	strong
+		color: $theme_highlight_2 !important
+		font-weight: 400
+
+// Version description
+.alert-warning
+	color : $text_brightest !important
+	background-color : $background_darkish
+	border-color 	 : $background_darkish
+
+// Progress bar
+.progress
+	background-color : $background_darkest !important
+.progress-bar-success
+	background-color : $accent_green !important
+
+// Labels
+.label-light
+	background-color : $background_darker !important
+	color 			 : $text_brightest
+a
+	color : $theme_highlight_2
+
+
+//
+// Login
+//
+
+.alert-danger
+	background-color : $danger_1 !important
+	color 			 : $danger_2 !important
+	border-color     : $danger_3 !important
