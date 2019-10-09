@@ -1,6 +1,6 @@
 # Under - A dark theme for MantisBT
 
-![MantisBTDarkTheme Screenshot](files/Under_Screenshot_MyView.png)
+![MantisBTDarkTheme Screenshot](files/Under_Screenshot_MyView.PNG)
 
 ## About
 
@@ -19,5 +19,5 @@ I've set the status colors to get the skin to look as the screenshots. Go to 'Ma
 I did not test it, but in theory you should even be able to *skin* it all with your own colors. The file `Under.sass` has some variables defined at the beginning which define its colors. Feel free to adjust and experiment the SASS file. Compile the SASS into CSS (which turns out, is really quite easy with the free compilers out there - Koala worked excellent for me).
 
 ## Screenshots
-![MantisBTDarkTheme Screenshot](files/Under_Screenshot_Roadmap.png)
-![MantisBTDarkTheme Screenshot](files/Under_Screenshot_Summary.png)
+![MantisBTDarkTheme Screenshot](files/Under_Screenshot_Roadmap.PNG)
+![MantisBTDarkTheme Screenshot](files/Under_Screenshot_Summary.PNG)
